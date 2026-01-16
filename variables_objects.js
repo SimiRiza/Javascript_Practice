@@ -12,8 +12,12 @@ var varVariable2 = 50;
 console.log("varVariable2:", varVariable2);
 var varVariable2 = 60;
 console.log("Re-declared varVariable2:", varVariable2);
-
-
+// print all
+console.log("final values: ","varvariable", varVariable, "constVariable", constVariable, "varVariable2", varVariable2)
+console.table({varVariable, constVariable, varVariable2});
+// prints in tabular format with varable names as headers
+console.table([varVariable, constVariable, varVariable2]);
+// prints in tabular format without variable names as headers instead with index as headers
 //concatanate string & number
 let stringVar="My age is ";
 let age=25;
@@ -35,7 +39,7 @@ console.log(obj);
 // };
  //TypeError: Assignment to constant variable.
 console.log("adding new property to const object:");
-obj.city = "Unkown";
+obj.city = "Unknown";
 console.log(obj);
 
 // dictionary like object
@@ -46,5 +50,10 @@ let dictObj = {
 };
 console.log("Accessing dictionary like object properties:");
 console.log("First Name:", dictObj['first_name']);
-console.log("Last Name:", dictObj["last name"]);
-console.log("Age:", dictObj.age);
+console.log("Last Name:", dictObj["last name"]);// access using bracket notation
+console.log("Age:", dictObj.age);//access using dot notation
+
+// table to print 
+console.table(dictObj);// prints in tabular format with property names as headers
+console.log([dictObj]);// prints array with names and values
+

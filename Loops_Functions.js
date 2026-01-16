@@ -42,3 +42,53 @@ function meanFunc(a,b,c,d,e){
 }
 console.log("Mean using function declaration:", meanFunc(15,25,35,45,55));
 
+//functions 
+function Myfunc(){
+    console.log("This is my function");
+}
+Myfunc();
+// with parameters
+function greet(name,age){
+    console.log("Hello", name + ", you are", age, "years old.");
+}
+greet("Alice", 30);
+// with return value
+function add(a,b){
+    return a + b;
+}
+let result = add(5,10);
+console.log("Sum of 5 and 10 is:", result);
+// arrow function
+()=>{
+    console.log("This is an arrow function");
+}// this is not called yet 
+// calling arrow function
+let arrowFunc = ()=>{
+    console.log("This is an arrow function");
+}
+arrowFunc();
+console.log(arrowFunc);
+//arrow function for sum
+let sumfunc = (a,b,c,d,e)=>{
+    return a + b + c + d + e;
+}
+console.log("Sum using arrow function:", sumfunc(1,2,3,4,5));
+// string as argument to count vowels 
+function countVowels(str){
+    let count = 0;
+    const vowels = "aeiouAEIOU";
+    for(let char of str){
+        if(vowels.indexOf(char) !== -1){
+            count++;
+        }
+    }
+    return count;
+}
+let myString = "Hello World";
+console.log("Number of vowels in '"+ myString + "' is:", countVowels(myString));
+// call back function example
+function count(countVowels,str){
+    return countVowels(str);
+}
+let vowelCount = count(countVowels, "Callback functions are powerful!");
+console.log("Vowel count using callback function:", vowelCount);
