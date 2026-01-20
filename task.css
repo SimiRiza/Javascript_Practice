@@ -1,0 +1,12 @@
+.para{
+    font-size: 20px;
+    color: blue;
+}
+
+.newclass{
+    background-color: yellow;
+}
+.b{
+    border: 2px solid rgb(143, 101, 101);
+    color: green;
+}

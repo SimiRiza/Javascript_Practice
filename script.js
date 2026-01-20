@@ -25,3 +25,6 @@ console.log(query_id_all);
 // returns all matches
 let query_class_all = document.querySelectorAll(".c1");
 console.log(query_class_all);
+console.log(query_class_all[1]);
+// innerText vs innerHTML
+let inner_text = document.getElementById("innerText");

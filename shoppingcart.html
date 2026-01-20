@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini E-Commerce</title>
+  <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2 class="logo">ShopEasy</h2>
+
+  <input type="text" placeholder="Search products..." class="search">
+
+  <nav>
+    <a href="#">About</a>
+    <a href="#">Pricing</a>
+    <a href="#">Cart</a>
+  </nav>
+</header>
+
+<!-- MESSAGE -->
+<p id="message"></p>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <div class="card">
+    <h3>Headphones</h3>
+    <p>₹1200</p>
+    <button onclick="addToCart('Headphones',1200)">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <h3>Notebook</h3>
+    <p>₹200</p>
+    <button onclick="addToCart('Notebook',200)">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <h3>USB Cable</h3>
+    <p>₹300</p>
+    <button onclick="addToCart('USB Cable',300)">Add to Cart</button>
+  </div>
+</section>
+
+<!-- BILL SECTION -->
+<section class="bill">
+  <h2>Billing</h2>
+
+  <textarea id="billItems" rows="6" readonly></textarea>
+
+  <input type="text" id="total" placeholder="Total Amount" readonly>
+
+  <button onclick="placeOrder()">Submit Order</button>
+</section>
+
+<script src="shopping.js"></script>
+</body>
+</html>
